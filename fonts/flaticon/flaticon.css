@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?40df0da5ed01ab1ce748be7c75d15412") format("truetype"),
+url("./flaticon.woff?40df0da5ed01ab1ce748be7c75d15412") format("woff"),
+url("./flaticon.woff2?40df0da5ed01ab1ce748be7c75d15412") format("woff2"),
+url("./flaticon.eot?40df0da5ed01ab1ce748be7c75d15412#iefix") format("embedded-opentype"),
+url("./flaticon.svg?40df0da5ed01ab1ce748be7c75d15412#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-gaming:before {
+    content: "\f101";
+}
+.flaticon-gaming-1:before {
+    content: "\f102";
+}
+.flaticon-vr-game:before {
+    content: "\f103";
+}
+.flaticon-gaming-2:before {
+    content: "\f104";
+}
+.flaticon-online-game:before {
+    content: "\f105";
+}
+.flaticon-dice:before {
+    content: "\f106";
+}
+.flaticon-joystick:before {
+    content: "\f107";
+}
+.flaticon-gaming-3:before {
+    content: "\f108";
+}
+.flaticon-controller:before {
+    content: "\f109";
+}
+.flaticon-world:before {
+    content: "\f10a";
+}
+.flaticon-gaming-4:before {
+    content: "\f10b";
+}
+.flaticon-bolt:before {
+    content: "\f10c";
+}
+.flaticon-computer:before {
+    content: "\f10d";
+}
+.flaticon-headset:before {
+    content: "\f10e";
+}
+.flaticon-mouse:before {
+    content: "\f10f";
+}
+.flaticon-online-gaming:before {
+    content: "\f110";
+}
+.flaticon-game:before {
+    content: "\f111";
+}
+.flaticon-character:before {
+    content: "\f112";
+}
+.flaticon-sports-game:before {
+    content: "\f113";
+}
+.flaticon-steering-wheel:before {
+    content: "\f114";
+}
+.flaticon-vr-glasses:before {
+    content: "\f115";
+}
+.flaticon-simulator:before {
+    content: "\f116";
+}
+.flaticon-gaming-5:before {
+    content: "\f117";
+}
+.flaticon-arcade:before {
+    content: "\f118";
+}
