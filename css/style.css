@@ -4423,3 +4423,30 @@ button.mfp-arrow {
 
 
 
+/* 2025 Hackathon sign up banner
+(im sorry the css is so long idk how to work this into the main code)
+*/
+
+.sign-up{
+	display:flex;
+	align-items: center;
+	background-color:#3e2845;
+	padding: 5px;
+	text-align: center;
+	justify-content: center;
+}
+
+.sign-up p {
+	margin: 0; /* Remove default margins from the <p> element */
+  }
+  
+
+#sign-up-btn{
+	background-color: #805ef0;
+	color: white;
+}
+#sign-up-btn:hover{
+    transition: all 1s ease;
+	background-color: #ffffff;
+	color: rgb(0, 0, 0);
+}
