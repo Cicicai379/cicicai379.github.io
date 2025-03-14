@@ -202,48 +202,106 @@
     </div>
     <!-- Marquee -->
 
-    <!-- What to expect -->
+    !-- What to expect -->
     <section class="connection p-0 pq-bg-grey">
         <div class="container-fluid">
-            <div class="row">
-                <!-- <div class="col-xl-6 pq-video-bg-img-2"> -->
-                    <!-- <div class="pq-popup-video-block pq-popup-style-1">
-                        <div class="pq-video-icon">
-                            <a href="https://www.youtube.com/watch?v=eVoveRM6OxU" class="pq-video default popup-youtube">
-                                <i aria-hidden="true" class="ion ion-play"></i>
-                            </a>	            
-                        </div>
-                    </div>
-                </div> -->
+            <div style="display: flex; align-items: center;" class="row">
                 <div class="col-xl-6">
-                    <div class="pq-no-limits-img" style = "text-align: center">
-                        <img src="images/winners.png" class="img-fluid" width = "700" alt="2024 Winners">
+                    <div class="pq-no-limits-img" style="text-align: center">
+                        <div class="slideshow-container" style="height: 300px; background-color: #fff;">
+                            <div class="slideshow">
+                                <img src="images/what-to-expect/guest-speakers.png" class="img-fluid" width="700" height="300" alt="Guest speakers">
+                                <div class="slideshow-text">Guest speakers</div>
+                            </div>
+                    
+                            <div class="slideshow">
+                                <img src="images/what-to-expect/exhibition2.png" class="img-fluid" width="700" height="300" alt="Exhibition example">
+                                <div class="slideshow-text">Exhibition example</div>
+                            </div>
+                    
+                            <div class="slideshow">
+                                <img src="images/what-to-expect/registration.png" class="img-fluid" width="700" height="300" alt="Registration">
+                                <div class="slideshow-text">Registration</div>
+                            </div>
+                    
+                            <div class="slideshow">
+                                <img src="images/what-to-expect/presentation.png" class="img-fluid" width="700" height="300" alt="Presentation">
+                                <div class="slideshow-text">Presentation</div>
+                            </div>
+                    
+                            <div class="slideshow">
+                                <img src="images/what-to-expect/winners.png" class="img-fluid" width="700" height="300" alt="2024 Winners">
+                                <div class="slideshow-text">2024 Winners</div>
+                            </div>
+                    
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
+                        </div>
+                        <script>
+                            let slideIndex = 1;
+                            showSlides(slideIndex);
+                    
+                            // Next/previous controls
+                            function plusSlides(n) {
+                                showSlides(slideIndex += n);
+                            }
+                    
+                            // Thumbnail image controls
+                            function currentSlide(n) {
+                                showSlides(slideIndex = n);
+                            }
+                    
+                            function showSlides(n) {
+                                let i;
+                                let slides = document.getElementsByClassName("slideshow");
+                                let dots = document.getElementsByClassName("dot");
+                                if (n > slides.length) { slideIndex = 1 }
+                                if (n < 1) { slideIndex = slides.length }
+                                for (i = 0; i < slides.length; i++) {
+                                    slides[i].style.display = "none";
+                                }
+                                for (i = 0; i < dots.length; i++) {
+                                    dots[i].className = dots[i].className.replace(" active", "");
+                                }
+                                slides[slideIndex - 1].style.display = "block";
+                                dots[slideIndex - 1].className += " active";
+                            }
+                        </script>
                     </div>
-                </div>
-                <div class="col-xl-6 pq-connection-spacing">
+                                    </div>
+                <div class="col-xl-6 pq-connection-spacing" style="padding-bottom: 20px;">
                     <div class="pq-section-title-style-1 pq-me-20 pq-pb-60">
                         <h2 class="pq-section-main-title">What to expect</h2>
                     </div>
                     <div class="row">
-                            <div class="pq-icon-box pq-style-6">
-                                <p class="pq-icon-box-description">
-                                    <b>The event will consist of these parts: </b>
-                                    <br>
-                                    - Presentations <br>
-                                    - Q&A sessions <br>
-                                    - Guest speakers <br>
-                                    - Award ceremony <br>
-                                    <br>
-                                    <br>
-                                    <b>Your team's aim is: </b>
-                                    <br>
-                                    - Create a functional solution to an assigned global problem<br>
-                                    - The specific problem will be announced on March 29th, and your team will have 7 days (March 29 - April 5) to create a project <br>
-                                    <br><br>
-                                    <b>*More details related to the rules and workshops will be posted closer to the start date. </b>
+                        <div class="pq-icon-box pq-style-6">
+                            <p class="pq-icon-box-description">
+                                <b>The event will consist of these parts: </b>
+                                <br>
+                                - Presentations <br>
+                                - Q&A sessions <br>
+                                - Guest speakers <br>
+                                - Award ceremony <br>
+                                <br>
+                                <b>Your team's aim is: </b>
+                                <br>
+                                - Create a functional solution to an assigned global problem<br>
+                                - The specific problem will be announced on March 29th, and your team will have 7 days
+                                (March 29 - April 5) to create a project <br>
+                                <br>
+                                <b>*More details related to the rules and workshops will be posted closer to the start
+                                    date. </b>
 
-                                </p>
-                            </div>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
