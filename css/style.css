@@ -4454,7 +4454,8 @@ button.mfp-arrow {
 
 
 .slideshow-container {
-    max-width: 1000px;
+    max-height: 500px;
+	width: 600px;	/* TH: DONT TOUCH THIS LINE*/
     position: relative;
     margin: auto;
     background-color: #fff; /* White background for images */
@@ -4466,9 +4467,10 @@ button.mfp-arrow {
 }
 
 .slideshow img {
-    width: 100%; /* Ensure images scale responsively */
-    height: 100%; /* Ensure images fill the container */
-    object-fit: cover; /* Maintain aspect ratio and fill fixed height */
+    width: 100%; /* Ensure responsive width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image is fully visible */
+
 }
 
 .prev, .next {
