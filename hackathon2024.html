@@ -235,6 +235,98 @@
     </section>
     <!-- What to expect -->
 
+    
+    <!-- Guest Speakers -->
+    <section class="connection p-0 pq-bg-grey">
+        <div class="container-fluid">
+            <div style="display: flex; align-items: center;" class="row">
+                <div class="col-xl-6">
+                    <div class="pq-no-limits-img" style="text-align: center">
+                        <div class="slideshow-container" style="height: 300px; background-color: #fff;">
+                            <div class="slideshow">
+                                <img src="images/judges2025/AndyOng.png" class="img-fluid" width="700" height="300" alt="Mr. Andy Ong">
+                                <div class="slideshow-text">Mr. Andy Ong</div>
+                            </div>
+                    
+                            <div class="slideshow">
+                                <img src="images/judges2025/ChunHuaLiu.png" class="img-fluid" width="700" height="300" alt="Professor Liu ChunHua">
+                                <div class="slideshow-text">Professor Liu ChunHua</div>
+                            </div>
+                    
+                            <div class="slideshow">
+                                <img src="images/judges2025/HarrisChan.png" class="img-fluid" width="700" height="300" alt="Mr. Harris Chan">
+                                <div class="slideshow-text">Mr. Harris Chan</div>
+                            </div>
+                    
+                            <div class="slideshow">
+                                <img src="images/judges2025/JamesDucker.png" class="img-fluid" width="700" height="300" alt="Mr. James Ducker">
+                                <div class="slideshow-text">Mr. James Ducker</div>
+                            </div>
+                    
+                            <div class="slideshow">
+                                <img src="images/judges2025/MaanavGupta.png" class="img-fluid" width="700" height="300" alt="Mr. Maanav Gupta">
+                                <div class="slideshow-text">Mr. Maanav Gupta</div>
+                            </div>
+
+                            <div class="slideshow">
+                                <img src="images/judges2025/NickTsang.png" class="img-fluid" width="700" height="300" alt="Mr. Nick Tsang">
+                                <div class="slideshow-text">Mr. Nick Tsang</div>
+                            </div>
+
+                            <div class="slideshow">
+                                <img src="images/judges2025/ShuLinLi.png" class="img-fluid" width="700" height="300" alt="Professor Li ShuLin">
+                                <div class="slideshow-text">Professor Li ShuLin</div>
+                    
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
+                            <span class="dot" onclick="currentSlide(6)"></span>
+                            <span class="dot" onclick="currentSlide(7)"></span>
+
+                        </div>
+                        <script>
+                            let slideIndex = 1;
+                            showSlides(slideIndex);
+                    
+                            // Next/previous controls
+                            function plusSlides(n) {
+                                showSlides(slideIndex += n);
+                            }
+                    
+                            // Thumbnail image controls
+                            function currentSlide(n) {
+                                showSlides(slideIndex = n);
+                            }
+                    
+                            function showSlides(n) {
+                                let i;
+                                let slides = document.getElementsByClassName("slideshow");
+                                let dots = document.getElementsByClassName("dot");
+                                if (n > slides.length) { slideIndex = 1 }
+                                if (n < 1) { slideIndex = slides.length }
+                                for (i = 0; i < slides.length; i++) {
+                                    slides[i].style.display = "none";
+                                }
+                                for (i = 0; i < dots.length; i++) {
+                                    dots[i].className = dots[i].className.replace(" active", "");
+                                }
+                                slides[slideIndex - 1].style.display = "block";
+                                dots[slideIndex - 1].className += " active";
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Guest Speakers -->
 
     <!-- timeline -->
     <section class="client pq-bg-dark">
